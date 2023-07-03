@@ -1,0 +1,263 @@
+[
+    {
+        "_id": "1",
+        "brand": "Apple",
+        "model": "iPhone 12",
+        "display_size": 6.8,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/5KT22Kh/elegant-smartphone-composition.jpg",
+        "price": 999.99
+    },
+    {
+        "_id": "2",
+        "brand": "Samsung",
+        "model": "Galaxy S21",
+        "display_size": 6.8,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+        "price": 899.99
+    },
+    {
+        "_id": "3",
+        "brand": "Google",
+        "model": "Pixel 5",
+        "display_size": 6.8,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/f43wSvG/elegant-smartphone-composition-2.jpg",
+        "price": 699.99
+    },
+    {
+        "_id": "4",
+        "brand": "OnePlus",
+        "model": "9 Pro",
+        "display_size": 6.8,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/wJ1851G/elegant-smartphone-composition-1.jpg",
+        "price": 899.99
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8b",
+        "brand": "Samsung",
+        "model": "Galaxy S21 Ultra",
+        "display_size": 6.8,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/5KT22Kh/elegant-smartphone-composition.jpg",
+        "price": 1199.99
+},
+{
+        "_id": "642c155b2c4774f05c36ee92",
+        "brand": "Apple",
+        "model": "iPhone 12 Pro Max",
+        "display_size": 6.7,
+        "ram": 6,
+        "storage": 128,
+        "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+        "price": 1099.99
+},
+{
+        "_id": "642c155b2c4774f05c36ee9c",
+        "brand": "Google",
+        "model": "Pixel 6 Pro",
+        "display_size": 6.7,
+        "ram": 8,
+        "storage": 256,
+        "image": "https://i.ibb.co/f43wSvG/elegant-smartphone-composition-2.jpg",
+        "price": 899.99
+},
+{
+        "_id": "642c155b2c4774f05c36ee99",
+        "brand": "OnePlus",
+        "model": "9 Pro",
+        "display_size": 6.7,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/wJ1851G/elegant-smartphone-composition-1.jpg",
+        "price": 899.99
+},
+{
+        "_id": "642c155b2c4774f05c36ee93",
+        "brand": "Xiaomi",
+        "model": "Mi 11 Ultra",
+        "display_size": 6.81,
+        "ram": 12,
+        "storage": 256,
+        "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+        "price": 1099.99
+},
+{
+        "_id": "642c155b2c4774f05c36eea0",
+        "brand": "Samsung",
+        "model": "Galaxy Note 20 Ultra",
+        "display_size": 6.9,
+        "ram": 12,
+        "storage": 512,
+        "image": "https://i.ibb.co/f43wSvG/elegant-smartphone-composition-2.jpg",
+        "price": 1299.99
+},
+{
+        "_id": "642c155b2c4774f05c36eea2",
+        "brand": "Apple",
+        "model": "iPhone 13 Pro",
+        "display_size": 6.1,
+        "ram": 6,
+        "storage": 128,
+        "image": "https://i.ibb.co/wJ1851G/elegant-smartphone-composition-1.jpg",
+        "price": 999.99
+},
+{
+        "_id": "642c155b2c4774f05c36eea9",
+        "brand": "Google",
+        "model": "Pixel 6",
+        "display_size": 6.4,
+        "ram": 8,
+        "storage": 128,
+        "image": "https://i.ibb.co/5KT22Kh/elegant-smartphone-composition.jpg",
+        "price": 699.99
+},
+{
+        "_id": "642c155b2c4774f05c36eeab",
+        "brand": "OnePlus",
+        "model": "Nord 2",
+        "display_size": 6.43,
+        "ram": 8,
+        "storage": 128,
+        "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+        "price": 399.99
+},
+{
+    "_id": "14t4fgrv45t5greg5",
+    "brand": "Apple",
+    "model": "iPhone 12",
+    "display_size": 6.8,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/5KT22Kh/elegant-smartphone-composition.jpg",
+    "price": 999.99
+},
+{
+    "_id": "2g5g5rgdb1232eg43",
+    "brand": "Samsung",
+    "model": "Galaxy S21",
+    "display_size": 6.8,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+    "price": 899.99
+},
+{
+    "_id": "3g5gerrg54g54",
+    "brand": "Google",
+    "model": "Pixel 5",
+    "display_size": 6.8,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/f43wSvG/elegant-smartphone-composition-2.jpg",
+    "price": 699.99
+},
+{
+    "_id": "443t45grt44g54",
+    "brand": "OnePlus",
+    "model": "9 Pro",
+    "display_size": 6.8,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/wJ1851G/elegant-smartphone-composition-1.jpg",
+    "price": 899.99
+},
+{
+    "_id": "642c155b2c4774f05c36ee8",
+    "brand": "Samsung",
+    "model": "Galaxy S21 Ultra",
+    "display_size": 6.8,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/5KT22Kh/elegant-smartphone-composition.jpg",
+    "price": 1199.99
+},
+{
+    "_id": "642c155b2c4774f05c36ee9",
+    "brand": "Apple",
+    "model": "iPhone 12 Pro Max",
+    "display_size": 6.7,
+    "ram": 6,
+    "storage": 128,
+    "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+    "price": 1099.99
+},
+{
+    "_id": "642c155b2c4774f05c36ee9",
+    "brand": "Google",
+    "model": "Pixel 6 Pro",
+    "display_size": 6.7,
+    "ram": 8,
+    "storage": 256,
+    "image": "https://i.ibb.co/f43wSvG/elegant-smartphone-composition-2.jpg",
+    "price": 899.99
+},
+{
+    "_id": "642c155b2c4774f05c36ee9",
+    "brand": "OnePlus",
+    "model": "9 Pro",
+    "display_size": 6.7,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/wJ1851G/elegant-smartphone-composition-1.jpg",
+    "price": 899.99
+},
+{
+    "_id": "642c155b2c4774f05c36ee9",
+    "brand": "Xiaomi",
+    "model": "Mi 11 Ultra",
+    "display_size": 6.81,
+    "ram": 12,
+    "storage": 256,
+    "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+    "price": 1099.99
+},
+{
+    "_id": "642c155b2c4774f05c36eea",
+    "brand": "Samsung",
+    "model": "Galaxy Note 20 Ultra",
+    "display_size": 6.9,
+    "ram": 12,
+    "storage": 512,
+    "image": "https://i.ibb.co/f43wSvG/elegant-smartphone-composition-2.jpg",
+    "price": 1299.99
+},
+{
+    "_id": "642c155b2c4774f05c36eea",
+    "brand": "Apple",
+    "model": "iPhone 13 Pro",
+    "display_size": 6.1,
+    "ram": 6,
+    "storage": 128,
+    "image": "https://i.ibb.co/wJ1851G/elegant-smartphone-composition-1.jpg",
+    "price": 999.99
+},
+{
+    "_id": "642c155b2c4774f05c36eea",
+    "brand": "Google",
+    "model": "Pixel 6",
+    "display_size": 6.4,
+    "ram": 8,
+    "storage": 128,
+    "image": "https://i.ibb.co/5KT22Kh/elegant-smartphone-composition.jpg",
+    "price": 699.99
+},
+{
+    "_id": "642c155b2c4774f05c36eea",
+    "brand": "OnePlus",
+    "model": "Nord 2",
+    "display_size": 6.43,
+    "ram": 8,
+    "storage": 128,
+    "image": "https://i.ibb.co/sQ2r1XJ/phone-screen-with-abstract-marble-aesthetic.jpg",
+    "price": 399.99
+}
+]
+
