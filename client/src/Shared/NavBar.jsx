@@ -3,9 +3,11 @@ import img from "../assets/logo.jpeg";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../Hook/useCart";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart();
 
   const handleLogOut = () => {
     logOut()
@@ -26,7 +28,7 @@ const NavBar = () => {
       <li>
         <button>
           <FaShoppingCart></FaShoppingCart>
-          <div className="badge badge-accent">+0</div>
+          <div className="badge badge-accent">+{cart?.length || 0}</div>
         </button>
       </li>
     </>
