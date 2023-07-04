@@ -2,28 +2,37 @@
 
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Swal from "sweetalert2";
 
 const MobileCard = ({ item }) => {
-  const { price, image, model, storage } = item;
+  const { price, image, model, storage, brand } = item;
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
 
   // handle cart
 
   const handleAddToCart = (item) => {
     console.log(item);
-    if (user) {
-      fetch("http://localhost:5000/carts")
+
+    if (user && user.email) {
+      const CartItem = { brand, image, price, email: user.email };
+      fetch("http://localhost:5000/carts", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(CartItem),
+      })
         .then((res) => res.json())
         .then((data) => {
           if (data.insertedId) {
             Swal.fire({
               position: "top-end",
               icon: "success",
-              title: "Your work has been saved",
+              title: "Item Successfully Addeded",
               showConfirmButton: false,
               timer: 1500,
             });
@@ -39,7 +48,7 @@ const MobileCard = ({ item }) => {
         confirmButtonText: "LogIn",
       }).then((result) => {
         if (result.isConfirmed) {
-          navigate("/login");
+          navigate("/login", { state: { from: location } });
         }
       });
     }
