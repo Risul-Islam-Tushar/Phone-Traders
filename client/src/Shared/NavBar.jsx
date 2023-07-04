@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import img from "../assets/logo.jpeg";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { FaShoppingCart } from "react-icons/fa";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -21,6 +22,12 @@ const NavBar = () => {
       </li>
       <li className="text-white font-bold ">
         <Link to="/shop">Shop</Link>
+      </li>
+      <li>
+        <button>
+          <FaShoppingCart></FaShoppingCart>
+          <div className="badge badge-accent">+0</div>
+        </button>
       </li>
     </>
   );
