@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home";
 import Shop from "../Pages/Shop/Shop";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
+import Dashboard from "../Layout/Dashboard";
+import MyCart from "../Pages/MyCart";
 
 export const router = createBrowserRouter([
   {
@@ -27,5 +29,15 @@ export const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUp></SignUp>,
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: "mycart",
+        element: <MyCart></MyCart>,
+      },
+    ],
   },
 ]);

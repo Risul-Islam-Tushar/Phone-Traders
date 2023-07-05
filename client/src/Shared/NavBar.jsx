@@ -26,10 +26,12 @@ const NavBar = () => {
         <Link to="/shop">Shop</Link>
       </li>
       <li>
-        <button>
-          <FaShoppingCart></FaShoppingCart>
-          <div className="badge badge-accent">+{cart?.length || 0}</div>
-        </button>
+        <Link to="/dashboard/mycart">
+          <button>
+            <FaShoppingCart></FaShoppingCart>
+            <div className="badge badge-accent">+{cart?.length || 0}</div>
+          </button>
+        </Link>
       </li>
     </>
   );
