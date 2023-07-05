@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 require("dotenv").config();
 const port = process.env.PORT || 5000;
+const { ObjectId } = require("mongodb");
 
 //middleware
 
@@ -46,6 +47,23 @@ async function run() {
       }
       const query = { email: email };
       const result = await cartCollection.find(query).toArray();
+      res.send(result);
+    });
+
+    // delete cart item
+
+    // app.delete("/carts/:id", async (req, res) => {
+    //   const id = req.params.id;
+    //   console.log(id);
+    //   const query = { _id: objectId(id) };
+    //   const result = await cartCollection.deleteOne(query);
+    //   res.send(result);
+    // });
+
+    app.delete("/carts/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await cartCollection.deleteOne(query);
       res.send(result);
     });
 

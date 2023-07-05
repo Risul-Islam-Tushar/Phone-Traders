@@ -20,7 +20,8 @@ const MobileCard = ({ item }) => {
     console.log(item);
 
     if (user && user.email) {
-      const CartItem = { brand, image, price, email: user.email };
+      const CartItem = { brand, image, price, email: user.email, model };
+      console.log(CartItem.model);
       fetch("http://localhost:5000/carts", {
         method: "POST",
         headers: {

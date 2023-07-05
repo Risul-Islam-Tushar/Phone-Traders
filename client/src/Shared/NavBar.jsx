@@ -27,7 +27,7 @@ const NavBar = () => {
       </li>
       <li>
         <Link to="/dashboard/mycart">
-          <button>
+          <button className="flex justify-around items-center">
             <FaShoppingCart></FaShoppingCart>
             <div className="badge badge-accent">+{cart?.length || 0}</div>
           </button>
