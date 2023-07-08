@@ -30,6 +30,7 @@ async function run() {
     await client.connect();
 
     const cartCollection = client.db("Phone-Traders").collection("carts");
+    const usersCollection = client.db("Phone-Traders").collection("users");
 
     // Cart data to database
     app.post("/carts", async (req, res) => {
@@ -52,18 +53,24 @@ async function run() {
 
     // delete cart item
 
-    // app.delete("/carts/:id", async (req, res) => {
-    //   const id = req.params.id;
-    //   console.log(id);
-    //   const query = { _id: objectId(id) };
-    //   const result = await cartCollection.deleteOne(query);
-    //   res.send(result);
-    // });
-
     app.delete("/carts/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
       const result = await cartCollection.deleteOne(query);
+      res.send(result);
+    });
+
+    // save users data
+
+    app.put("/users/:email", async (req, res) => {
+      const email = req.params.email;
+      const user = req.body;
+      const query = { email: email };
+      const options = { upsert: true };
+      const updateDoc = {
+        $set: user,
+      };
+      const result = await usersCollection.updateOne(query, updateDoc, options);
       res.send(result);
     });
 
