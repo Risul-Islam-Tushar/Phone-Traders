@@ -20,8 +20,9 @@ const SignUp = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
     createUser(email, password, name)
-      .then(() => {
+      .then((result) => {
         toast.success("Signup successful");
+        saveUser(result.user);
         navigate(from, { replace: true });
       })
       .catch((err) => {

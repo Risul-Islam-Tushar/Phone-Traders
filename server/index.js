@@ -31,6 +31,14 @@ async function run() {
 
     const cartCollection = client.db("Phone-Traders").collection("carts");
     const usersCollection = client.db("Phone-Traders").collection("users");
+    const reviewCollection = client.db("Phone-Traders").collection("reviews");
+
+    // review api
+
+    app.get("/reviews", async (req, res) => {
+      const result = await reviewCollection.find().toArray();
+      res.send(result);
+    });
 
     // Cart data to database
     app.post("/carts", async (req, res) => {
@@ -65,12 +73,33 @@ async function run() {
     app.put("/users/:email", async (req, res) => {
       const email = req.params.email;
       const user = req.body;
+      console.log(user);
       const query = { email: email };
       const options = { upsert: true };
       const updateDoc = {
         $set: user,
       };
       const result = await usersCollection.updateOne(query, updateDoc, options);
+      res.send(result);
+    });
+
+    // get users from db
+
+    app.get("/users", async (req, res) => {
+      let query = {};
+      const result = await usersCollection.find(query).toArray();
+      res.send(result);
+    });
+
+    app.patch("/users/admin/:id", async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id) };
+      const updateDoc = {
+        $set: {
+          role: "admin",
+        },
+      };
+      const result = await usersCollection.updateOne(filter, updateDoc);
       res.send(result);
     });
 
