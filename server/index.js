@@ -103,6 +103,14 @@ async function run() {
       res.send(result);
     });
 
+    app.get("/users/admin/:email", async (req, res) => {
+      const email = req.params.email;
+      const query = { email };
+      const user = await usersCollection.findOne(query);
+      const reult = res.send({ isAdmin: user?.role === "admin" });
+      console.log(reult);
+    });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log(

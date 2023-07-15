@@ -13,10 +13,7 @@ import useAdmin from "../Hook/useAdmin";
 const Dashboard = () => {
   const [cart] = useCart();
 
-  // todo
-
   const [isAdmin] = useAdmin();
-
   return (
     <div>
       <div className="drawer drawer-mobile">
