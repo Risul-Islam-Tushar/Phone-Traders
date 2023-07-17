@@ -35,12 +35,14 @@ const AllUsers = () => {
       <Helmet>
         <title>PHone Traders | Users</title>
       </Helmet>
-      <h3 className=" text-2xl">Total Users: {users.length}</h3>
-      <div className="overflow-x-auto">
+      <h3 className=" text-2xl uppercase font-semibold">
+        Total Users:- {users.length}
+      </h3>
+      <div className="overflow-x-auto mt-9">
         <table className="table">
           {/* head */}
           <thead>
-            <tr>
+            <tr className="bg-amber-600 rounded-xl">
               <th>#</th>
               <th>Email</th>
               <th>Role</th>

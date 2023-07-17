@@ -86,7 +86,7 @@ const AddItem = () => {
           />
         </div>
         <input
-          className="btn btn-outline border-0 border-b-4 mt-4 text-center "
+          className="btn btn-warning  mt-4 text-center  w-full                     "
           type="submit"
           value="Add Item"
         />
