@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div>
       <div className="relative">
-        <img src={coverImg} alt="cover img" />
+        <img className="w-full" src={coverImg} alt="cover img" />
         <div className="p-4 md:absolute rounded-xl left-8 top-64 ">
           <h1 className="text-5xl font-extrabold uppercase">
             Welcome to our<br></br>
