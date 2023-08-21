@@ -10,7 +10,7 @@
 //     enabled: !loading,
 //     queryFn: async () => {
 //       const res = await fetch(
-//         `http://localhost:5000/users/admin/${user?.email}`
+//         `https://server-risul-islam-tushar.vercel.app/users/admin/${user?.email}`
 //       );
 //       console.log(user.email);
 //       return res.data.admin;
@@ -28,7 +28,9 @@ const UseAdmin = () => {
   const [isAdminLoading, setIsAdminLoading] = useState(true);
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/users/admin/${user.email}`)
+      fetch(
+        `https://server-risul-islam-tushar.vercel.app/users/admin/${user.email}`
+      )
         .then((res) => res.json())
         .then((data) => {
           setIsAdmin(data.isAdmin);

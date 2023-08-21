@@ -22,7 +22,7 @@ const MobileCard = ({ item }) => {
     if (user && user.email) {
       const CartItem = { brand, image, price, email: user.email, model };
       console.log(CartItem.model);
-      fetch("http://localhost:5000/carts", {
+      fetch("https://server-risul-islam-tushar.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",

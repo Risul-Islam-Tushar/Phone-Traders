@@ -5,15 +5,20 @@ import { RiUserSettingsFill } from "react-icons/ri";
 import Swal from "sweetalert2";
 const AllUsers = () => {
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const res = await fetch("http://localhost:5000/users");
+    const res = await fetch(
+      "https://server-risul-islam-tushar.vercel.app/users"
+    );
     return res.json();
   });
 
   // const handleDelete = (user) => {};
   const handleAdmin = (user) => {
-    fetch(`http://localhost:5000/users/admin/${user._id}`, {
-      method: "PATCH",
-    })
+    fetch(
+      `https://server-risul-islam-tushar.vercel.app/users/admin/${user._id}`,
+      {
+        method: "PATCH",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
