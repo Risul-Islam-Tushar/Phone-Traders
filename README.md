@@ -11,9 +11,6 @@ Welcome to Phone Traders – Your Premier Destination for Seamless Mobile Shoppi
 - Tailwind CSS
 - DaisyUI
 
-## Server Side Repository
-
-
 
 ## How to run the project
 
