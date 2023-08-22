@@ -4,12 +4,12 @@ Welcome to Phone Traders – Your Premier Destination for Seamless Mobile Shoppi
 
 ## Tech Stack
 
-- MongoDB
-- ReactJS
-- ExpressJS
-- Node.js
 - Tailwind CSS
 - DaisyUI
+- ReactJS
+- Node.js
+- ExpressJS
+- MongoDB
 
 
 ## How to run the project
