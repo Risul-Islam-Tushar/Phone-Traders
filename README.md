@@ -27,4 +27,4 @@ If you want to contribute to the project, please feel free to create a pull requ
 
 ## Contact
 
-If you have any questions or suggestions, please don't hesitate to reach out. You can contact me at risul0408@gmail.com.
+If you have any questions or suggestions, please don't hesitate to reach out. You can contact me at risulislam0408@gmail.com.
